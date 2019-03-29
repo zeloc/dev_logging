@@ -14,6 +14,6 @@ To add this to magento you will need to add it to the composer.json under "repos
 Then you need to install it but you will need to add ```@dev``` to get around any limitations on requirements:
 
 ```
-composer require doug/codetest @dev
+composer require dev/logdata @dev
 ```
 the above represents the name that is defined in the modules composer.json
