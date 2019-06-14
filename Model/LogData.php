@@ -12,7 +12,11 @@ class LogData
         $writer = new \Zend\Log\Writer\Stream(BP . '/var/log/dmdebug.log');
         $log = new \Zend\Log\Logger();
         $log->addWriter($writer);
+        if(is_string($data)){
+            $log->info($data);
+        }else{
+            $log->info(print_r($data, true));
+        }
 
-        $log->info($data);
     }
 }
