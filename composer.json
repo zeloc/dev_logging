@@ -2,7 +2,7 @@
     "name": "dev/logdata",
     "description": "",
     "require": {
-        "php": "~7.1",
+        "php": "~7.1.0",
         
         "magento/magento-composer-installer": "*"
     },
