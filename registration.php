@@ -2,6 +2,6 @@
 
 \Magento\Framework\Component\ComponentRegistrar::register(
     \Magento\Framework\Component\ComponentRegistrar::MODULE,
-    'Dev_LogData',
+    'Zeloc_LogData',
     __DIR__
 );
