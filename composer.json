@@ -2,8 +2,7 @@
   "name": "zeloc/logdata",
   "description": "This is an inline debug logger",
   "require": {
-    "php": "~7.0.0|~7.1.0",
-    "magento/product-community-edition": "~2.5.0"
+    "php": "~7.0.0|~7.1.0"
   },
   "type": "magento2-module",
   "license": [
