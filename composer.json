@@ -1,23 +1,20 @@
 {
-    "name": "zeloc/logdata",
-    "description": "",
-    "require": {
-        "php": "~7.1.0"
-    },
-    "suggest": {
-
-    },
-    "type": "magento2-module",
-   
-    "license": [
-	"mit"
+  "name": "zeloc/logdata",
+  "description": "This is an inline debug logger",
+  "require": {
+    "php": "~7.1.0",
+    "magento/product-community-edition": "~2.3.0"
+  },
+  "type": "magento2-module",
+  "license": [
+    "mit"
+  ],
+  "autoload": {
+    "files": [
+      "registration.php"
     ],
-    "autoload": {
-        "files": [
-            "registration.php"
-        ],
-        "psr-4": {
-            "Dev\\LogData\\": ""
-        }
+    "psr-4": {
+      "Dev\\LogData\\": ""
     }
+  }
 }
