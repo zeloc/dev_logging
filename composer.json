@@ -1,5 +1,5 @@
 {
-    "name": "dev/logdata",
+    "name": "zeloc/logdata",
     "description": "",
     "require": {
         "php": "~7.1.0",
