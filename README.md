@@ -7,7 +7,7 @@ To add this to magento you will need to add it to the composer.json under "repos
         }, 
         {
             "type": "vcs",
-            "url": "https://munrodev@bitbucket.org/munrodev/dev_logging.git"
+            "url": "https://github.com/zeloc/dev_logging.git"
         }
     ]
 ```	
