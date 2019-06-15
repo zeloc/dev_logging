@@ -2,17 +2,15 @@
     "name": "zeloc/logdata",
     "description": "",
     "require": {
-        "php": "~7.1.0",
-        
-        "magento/magento-composer-installer": "*"
+        "php": "~7.1.0"
     },
     "suggest": {
 
     },
     "type": "magento2-module",
-    "version": "0.1.0",
+   
     "license": [
-
+	"mit"
     ],
     "autoload": {
         "files": [
