@@ -4,15 +4,27 @@ namespace Zeloc\LogData\Model;
 
 class LogData
 {
-    public static function log($data)
+    public static function log($data, $logFileName = 'zdebug.log')
     {
-        $writer = new \Zend\Log\Writer\Stream(BP . '/var/log/zdebug.log');
-        $log = new \Zend\Log\Logger();
+        $path = sprintf('$s/var/log/%s', BP, $logFileName);
+        $writer = new \Laminas\Log\Writer\Stream($path);
+        $log = new \Laminas\Log\Logger();
         $log->addWriter($writer);
         if(is_string($data)){
             $log->info($data);
         }else{
             $log->info(print_r($data, true));
+        }
+    }
+
+    public static function logClass($object, $ref='object')
+    {
+        if(is_object($object)){
+            $class = get_class($object);
+            self::log(sprintf('%s class name = %s', $ref, $class));
+        }else{
+            $type = gettype($object);
+            self::log(sprintf('Variable is object, is type: %s', $type));
         }
 
     }
