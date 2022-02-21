@@ -6,8 +6,8 @@ class LogData
 {
     public static function log($data, $logFileName = 'zdebug.log')
     {
-        $path = sprintf('$s/var/log/%s', BP, $logFileName);
-        $writer = new \Laminas\Log\Writer\Stream($path);
+        $path = '/var/log/' . $logFileName;
+        $writer = new \Zend\Log\Writer\Stream(BP . $path);
         $log = new \Laminas\Log\Logger();
         $log->addWriter($writer);
         if(is_string($data)){
